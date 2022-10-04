@@ -1,0 +1,90 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+p {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  background-color: yellow;
+}
+
+.cell {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top:  10px;
+  margin-right: 2%;
+  margin-left: 2%;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.item {
+  position: absolute;
+  right: 0px;
+  padding: 6px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top:  0px;
+  text-align: center;
+  width: 75px;
+  font-size:  15px;
+}
+
+#Chicken {
+  background-color: seagreen;
+}
+#Beef {
+  background-color: orangered;
+}
+#Sushi {
+  background-color: skyblue;
+}
+
+.detail {
+  padding: 30px 10px 5px 10px;
+  height: 100px;
+  font-size: 12px;
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 29.33%; /* 12% went to margins */
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 46%; /* 8% went to margins */
+  }
+  #col3 {
+    width: 96%; /* 4% went to margin of column 3 */
+  }
+}
+/********** Tablet devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+  }
+  #col3, #col2, #col1 {
+    width: 96%; /* 4% went to margin of columns */
+  }
+}
+
